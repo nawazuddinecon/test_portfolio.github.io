@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nawazuddin Ahmed</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+      <div class="logo">Nawazuddin Ahmed</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research and Teaching</a></li>
+          <li><a href="Codes.html">Resources</a></li>
+          <li><a href="Blog.html">Blogs</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Mobile (Hamburger) Navigation -->
+    <nav id="hamburger-nav">
+      <div class="logo">Nawazuddin Ahmed</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="research.html" onclick="toggleMenu()">Research and Teaching</a></li>
+          <li><a href="Codes.html" onclick="toggleMenu()">Resources</a></li>
+          <li><a href="Blog.html" onclick="toggleMenu()">Blogs</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/my picture_original_3.png" class="user-image" alt="Nawazuddin Ahmed" />
+      </div>
+      <div class="section__text">
+        <h1>Nawazuddin Ahmed</h1>
+        <br />
+        <div class="text-container">
+          <p>
+            I am an Assistant Professor at Symbiosis School of Economics, Pune.
+            I did PhD in economics from the Department of Humanities & Social Sciences, IIT Roorkee (India).
+            The title of my thesis is ‘Intergenerational Occupational Mobility Among Socio-Religious Communities in India: With Special Reference to the Muslims’.
+            My research interests lie in the intersection of labour and development economics.
+            I work on Intra-generational and Intergenerational mobility issues, socio-religious and caste-based differences in socio-economic outcomes, and stratification in the labour market.
+          </p>
+        </div>
+        <br />
+
+        <!-- Buttons -->
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('https://drive.google.com/file/d/1HSdot0k2T46aTCA66ApWck18QnLNWGqH/view?usp=sharing', '_blank')">
+            CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='mailto:nawazuddin.econ@gmail.com'">
+            Contact Info
+          </button>
+        </div>
+
+        <!-- Social Links -->
+        <br />
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/nawazuddin-ahmed-3a0a4a85/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/nawazuddinecon'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <!-- You can add footer links here if needed -->
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Nawazuddin Ahmed. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
