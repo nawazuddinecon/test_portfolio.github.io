@@ -89,7 +89,7 @@ a:hover {
 .hamburger-icon span {
   width: 30px;
   height: 3px;
-  background-color: #000; /* High contrast */
+  background-color: #333; /* Dark grey for visibility */
   margin: 5px 0;           /* Space between lines */
   display: block;
   transition: all 0.3s ease-in-out;
