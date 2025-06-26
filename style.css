@@ -7,17 +7,25 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  line-height: 1.6;
-  overflow-x: hidden;
+img,
+.project-img,
+.user-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* NAVIGATION COMMON */
+/* NAVIGATION */
 nav {
   width: 100%;
   display: flex;
@@ -32,11 +40,6 @@ nav {
   font-size: 1.8rem;
   font-weight: 600;
   color: #333;
-}
-
-/* DESKTOP NAVIGATION */
-#desktop-nav {
-  display: flex;
 }
 
 .nav-links {
@@ -57,10 +60,11 @@ nav {
   text-underline-offset: 5px;
 }
 
-/* MOBILE NAVIGATION */
+/* HAMBURGER MENU */
 #hamburger-nav {
   display: none;
   flex-direction: column;
+  position: relative;
 }
 
 .hamburger-menu {
@@ -81,90 +85,4 @@ nav {
 .hamburger-icon span {
   width: 30px;
   height: 3px;
-  background-color: #333;
-  margin: 5px 0;
-  display: block;
-  border-radius: 2px;
-  transition: all 0.3s ease-in-out;
-}
-
-.menu-links {
-  display: none;
-  flex-direction: column;
-  gap: 1rem;
-  background-color: #fff;
-  position: absolute;
-  top: 40px;
-  right: 0;
-  padding: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  z-index: 999;
-}
-
-.menu-links li {
-  list-style: none;
-}
-
-.menu-links a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: #333;
-}
-
-.menu-links a:hover {
-  color: #666;
-}
-
-.menu-links.open {
-  display: flex;
-}
-
-/* TOGGLE ANIMATION */
-.hamburger-icon.open span:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
-}
-.hamburger-icon.open span:nth-child(2) {
-  opacity: 0;
-}
-.hamburger-icon.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
-}
-
-/* RESPONSIVE BEHAVIOUR */
-@media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-  }
-}
-
-/* Ensure menu icon and text scale well on smaller phones */
-@media screen and (max-width: 600px) {
-  .logo {
-    font-size: 1.5rem;
-  }
-
-  .menu-links a {
-    font-size: 1rem;
-  }
-}
-
-/* IMAGE FIXES */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-.project-img,
-.user-image,
-.section__pic-container img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 1rem;
-}
+  background
