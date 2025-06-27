@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,83 +10,160 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <!-- Desktop Navigation -->
     <nav id="desktop-nav">
-      <div class="logo">Nawazuddin Ahmed</div>
+      <div class="logo"></div>
       <div>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
           <li><a href="research.html">Research and Teaching</a></li>
           <li><a href="Codes.html">Resources</a></li>
           <li><a href="Blog.html">Blogs</a></li>
         </ul>
       </div>
     </nav>
-
-    <!-- Mobile Navigation -->
     <nav id="hamburger-nav">
-      <div class="logo">Nawazuddin Ahmed</div>
+      <!-- <div class="logo"></div> -->
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <div class="menu-links">
-          <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
-          <li><a href="research.html" onclick="toggleMenu()">Research and Teaching</a></li>
-          <li><a href="Codes.html" onclick="toggleMenu()">Resources</a></li>
-          <li><a href="Blog.html" onclick="toggleMenu()">Blogs</a></li>
-        </div>
+          <div class="menu-links">
+            <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+            <li><a href="research.html" onclick="toggleMenu()">Research and Teaching</a></li>
+            <li><a href="Codes.html" onclick="toggleMenu()">Resources</a></li>
+            <li><a href="Blog.html" onclick="toggleMenu()">Blogs</a></li>
+</div>
       </div>
     </nav>
-
-    <!-- Blog Section -->
-    <section id="projects">
-      <h1 class="title">Blogs</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-
-          <!-- Blog 1 -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/NTL_3.png" alt="Night Lights" class="project-img" />
+	  
+      <section id="projects">
+        <p class="section__text__p1"></p>
+        <h1 class="title">Blogs</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/NTL_3.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">District-Wise Extraction of Night Lights</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='Dist_wise_NTL.html'"
+                >
+                  Read Here
+                </button>
+              </div>
             </div>
-            <h2 class="experience-sub-title project-title">District-Wise Extraction of Night Lights</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='Dist_wise_NTL.html'">
-                Read Here
-              </button>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/world_pop_1.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Population Estimates from WorldPop</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='WorldPop_Extract.html'"
+                >
+                  Read Here
+                </button>
+              </div>
+            </div>
+            <!-- <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/COVID_Stata.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Data Viz Stata: Covid-19 Graphs</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+              </div>
             </div>
           </div>
-
-          <!-- Blog 2 -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/world_pop_1.png" alt="WorldPop" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Population Estimates from WorldPop</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='WorldPop_Extract.html'">
-                Read Here
-              </button>
-            </div>
-          </div>
-
-          <!-- Optional: More blog cards can go here -->
-
+          <br>
+          <div class="experience-details-container">
+            <div class="section__pic-container"> 
+              <div class="about-containers">
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/Panel_data_image_2.png"
+                    alt="Project 1"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Brown's Expanded Decomposition in Stata</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Github
+                  </button>
+                </div>
+              </div>
+            </div> -->
+              <!-- <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/CMIE_CPHS.png"
+                    alt="Project 2"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Population Dens</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Github
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/COVID_Stata.png"
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Project 6</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Github
+                  </button>
+                </div>
+              </div> -->
+            </div>        
         </div>
-      </div>
-
-      <!-- Back arrow to homepage or any section -->
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='index.html'"
-      />
-    </section>
-
-    <script src="script.js"></script>
-  </body>
-</html>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+    
